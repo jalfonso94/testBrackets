@@ -4,7 +4,7 @@
   "description": "Balanced brackets kata (problem and solution)",
   "main": "index.js",
   "scripts": {
-    "test": "xo && ava",
+    "test": "ava",
     "level1": "ava ./test/level1/level1.spec.js",
     "level2": "ava ./test/level2/level2.spec.js",
     "level3": "ava ./test/level3/level3.spec.js",
@@ -44,7 +44,10 @@
       "ava/no-ignored-test-files": [
         "error",
         {
-          "files": ["is-balanced.spec.js", "test/**/*.spec.js"]
+          "files": [
+            "is-balanced.spec.js",
+            "test/**/*.spec.js"
+          ]
         }
       ],
       "no-unused-vars": [
